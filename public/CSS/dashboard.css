@@ -1,0 +1,16 @@
+body{
+   padding: 0;
+   margin: 0;
+   display: flex;
+
+
+}
+.boardContent{
+
+   display: flex;
+   margin-left: 500px;
+   justify-self: center;
+   align-self: center;
+   width: 98vw;
+}
+

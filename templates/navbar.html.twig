@@ -1,0 +1,33 @@
+
+
+{% block stylesheets %}
+            <link href="{{ asset('css/navbar.css') }}" rel="stylesheet" />
+        {% endblock %}
+{% block navbar  %}
+<div class="navbar">
+
+ <div class="logoNav" href="/">
+        <a href="/">
+        <img src="{{ asset('IMG/logov2.svg') }}" alt="Garage V.Parrot logo" />
+        </a>
+    </div>
+
+        <div class="navbarButton">
+                <div class="liButton">
+                <li><a href="{{ path('app_request_management_new') }}">Nous contacter</a></li>
+                </div>
+
+                <div class="liButton">
+                <li><a href="/">Nos services</a></li>
+                </div>
+
+                <div class="liButton">
+                <li><a href="/auto">Voiture d'occasion</a></li>
+                </div>
+
+                <div class="liButton">
+                <li><a href="/login">Se connecter</a></li>
+                </div>
+        </div>
+</div>
+{% endblock %}

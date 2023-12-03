@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+            <link href="{{ asset('css/horaire_index.css') }}" rel="stylesheet" />
+        {% endblock %}
+
+{% block title %}Horaire index{% endblock %}
+
+{% block body %}
+ <div class="adminSide_bar">
+            {% include 'dashbord/adminSide_bar.html.twig' %} 
+
+        </div>
+  
+   <div class="autoInfo_container">
+     <h1>Gestion des horaires</h1>
+     <div class="autoIndex_header">
+              <a class="btn"href="{{ path('app_horaire_new') }}">Ajouter </a>
+     </div>
+    <table class="autoInfo_table">
+        <thead>
+            <tr class=" headerTable_tittle">
+
+                <th class="range">Jour</th>
+                <th class="range">Heure d'ouvreture</th>
+                <th class="range"> Fermeture </th>
+                <th class="range">Heure de reprise</th>
+                <th class="range">Heure de fermeture</th>
+             
+            </tr>
+        </thead>
+        <tbody>
+        {% for horaire in horaires %}
+            <tr>
+           
+                <td class="range">{{ horaire.Jour }}</td>
+                <td class="range">{{ horaire.morningStartTime ? horaire.morningStartTime|date('H:i') : '' }}</td>
+                <td class="range">{{ horaire.morningEndTime ? horaire.morningEndTime|date('H:i') : '' }}</td>
+                <td class="range">{{ horaire.afterStartTime ? horaire.afterStartTime|date('H:i') : '' }}</td>
+                <td class="range">{{ horaire.afterEndTime ? horaire.afterEndTime|date('H:i') : '' }}</td>
+                <td class="btn">
+                    <a href="{{ path('app_horaire_show', {'id': horaire.id}) }}">Voir en détail</a>
+                    <a href="{{ path('app_horaire_edit', {'id': horaire.id}) }}">Modifier</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+ 
+    </div>
+
+ 
+{% endblock %}
+{% block footer %}
+{% endblock %}

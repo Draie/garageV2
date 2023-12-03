@@ -1,0 +1,165 @@
+
+/* GLOBALE STYLE */
+body{
+    grid-template-rows: 10vh 90vh;
+    height: max-content;
+    width: 98vw;
+    padding: 0;
+    margin:0;
+    width: 98.8vw;
+    
+    
+}
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: lighter;
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+.Heading2 h1{
+    margin-left: 120px;
+}
+.autoBody{
+    display:grid;
+    width: 90vw;
+    grid-template-columns: 2fr 2fr;
+    justify-items: center;
+    padding-left: 5vw;
+
+}
+
+
+
+/* AUTO CARD STYLE*/
+.autoCard{
+    display: flex;
+    background-color: #EFF0E4;
+    width: 400px;
+    height: 600px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+   
+    
+}
+.autoCard img {
+    width: 300px;
+    height: 329px;
+
+}
+
+
+.autoCard h3{
+    align-self: flex-start;
+    padding-left: 3.6vw;
+}
+
+ .btn a{
+    background-color: #F14413;
+    color: #FFF;
+    font-weight: bolder;
+    padding: 6px;
+    font-size: 24px;
+    text-decoration: none;
+    margin-left: 10vw;
+    margin-top: 1rem;
+    font-family: 'Roboto', sans-serif;
+
+    
+}
+
+.btn a:hover{
+    background-color: #c83810;
+   
+}
+/*---------------------------------------------------------end card -------*/
+
+/*------------- DETAIL BOX ---------*/
+.detailBox{
+    
+    width: 750px;
+    font-family: 'Roboto', sans-serif;
+    gap:  4px;
+    justify-content: center;
+
+    
+}
+.detailBox h1 , h4{
+    font-weight: lighter;
+    
+}
+.detailBox h4 {
+    font-size: 25px;
+    margin-left: 50px;
+    width: max-content;
+    font-weight: bolder;
+
+}
+ .equipement h4{
+    font-size: 32px;
+    margin-left: 50px;
+    width: max-content;
+    overflow: hidden;
+}
+.detailBox h1{
+    font-size: 40px;
+    margin-left:2rem;
+    padding-top: 50px;
+}
+.detailContent{
+    margin: 50px;
+    background-color: #FFF;
+    height: 31rem;
+    box-shadow: -1px 17px 361px -6px rgba(82,73,73,0.03);
+}
+.detailBox h1 {
+    background-color: #FFF;
+}
+
+
+/*--------- APERCCU IMG STYLE----------------------- */
+.imgAperçuContainer{
+    display: flex;
+    margin: 2rem;
+    gap: 2rem;
+    margin-left: 4.9rem;
+
+}
+
+
+.imgAperçuContainer img {
+    width: 200px;
+    height: 195px;
+    border-width: 5px;
+    border-color: #FFF;
+    border-style: solid;
+    
+}
+
+.imgAperçuContainer img:hover{
+    border-width: 5px;
+    border-color: #F14413;
+    border-style: solid;
+    box-shadow: -1px 2px 148px -51px rgba(227,227,227,0.75);
+}
+.img-cover img{
+    width: 200px;
+    height: 200px;
+}
+
+
+/* CLOSE BUTTON STYLE */
+
+ svg{
+    position: absolute;
+    left: 87vw;
+    top:45vh;
+    opacity: 0.5;
+  
+}
+
+svg:hover{
+    opacity: 1;
+}

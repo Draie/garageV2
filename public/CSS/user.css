@@ -1,0 +1,140 @@
+/* GLOBALE STYELE*/
+
+body{
+    width: 98.89vw;
+
+
+  
+}
+*{
+    padding: 0px;
+  margin:0px;
+}
+
+.mainContent{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 98.89vw;
+
+}
+
+.mainContent h1{  
+   font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px;
+  color: #020409;
+  margin-left: 8rem;
+  font-weight: lighter;
+}
+
+/* //////////////////////////////////////////////////////*/
+
+/* FORM PART STYLE*/
+.formContent{
+    width: 98.9vw;
+    height: 100vh;
+
+    justify-content: center;
+
+    margin-top: 5rem;
+}
+.formContent .formDetails 
+{
+  display: flex;
+}
+
+.form{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction:column;
+  margin-left: 40vw;
+  max-width: 450px;
+
+}
+.form label{
+  font-size: larger;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+
+
+}
+.form div {
+  flex: start;
+  min-width: 300px;
+  max-width: 350px;
+}
+.form input {
+  border: 1px solid rgba(140,140,140,0.89);
+  margin-left: 10px;
+  height: 20px;
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  color: rgba(140,140,140,0.89);
+
+}
+
+.formContent a{
+  margin-right: 2rem;
+}
+
+/* //////////////////////////////////////////////// */
+
+
+.btnRegister{
+  height: 30px;
+  flex: end;
+ margin-left: 45vw;
+ padding-top: 10px;
+
+ background-color: #F14413;
+    
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto','sans-serif';
+  font-weight: 800 ;
+  align-self: center;
+  padding: 5px;
+  transition-duration: 0.7s;
+  border:none;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 30px;
+  transition-duration: 0.7s;
+ 
+}
+
+.btnRegister:hover{
+    background-color: #992708f8;
+}
+
+.checkbox div{
+    display: flex;
+   width: 100%;
+   justify-self: center;
+   align-items: center;
+}
+
+.checkbox div label{
+    min-width: max-content;
+    text-align: center;
+}
+
+
+/* USER LIST PART */
+/*.userList{
+    display: flex;
+    background-color: #F14413;
+    margin-top: 5rem;
+    flex-direction: column;
+    padding-left: 10vw;
+}
+
+.userCard{
+    display: flex;
+    gap: 5rem;
+}
+
+*/

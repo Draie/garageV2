@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page d'accueil - V.Parrot!{% endblock %}
+{% block stylesheets %}
+            <link href="{{ asset('css/Home.css') }}" rel="stylesheet" />
+        {% endblock %}
+         {% block javascripts %}
+            <script src="{{ asset('js/index.js') }}"></script>
+           
+        {% endblock %}
+{% block body %}
+
+{% include 'navbar.html.twig' %}
+
+     <div class="herobanner">
+          <h1>  la qualité automobile à votre service !</h1>
+     </div>
+     <content>
+   <h1 class="Heading1"> nos services de réparation automobiles</h1>
+    <div class="mainContent">
+     {% include 'home/serviceCard.html.twig' %}
+     </div>
+
+     <h1 class="Heading1"> nos vehicules d'occasions</h1>
+              {#  <div class="filterPart">
+          <h2> Filtre </h2>
+          <button class="priceBtn">du plus chère au moins chère</button>
+               <button class="kmsBtn">Du kilometrage le plus bas au plus haut </button>
+          </div>
+          #}
+    <div class="mainContent">
+    
+
+     {% include 'home/autoCard.html.twig' %}
+       
+         
+     </div>
+
+     <h1 class="Heading1"> Ils nous ont fait confiance</h1>
+     <div class="feedContent">
+         
+     {% include 'home/feedbackContainer.html.twig' %}
+     </div>
+
+     </content>
+
+{% endblock %}
+
